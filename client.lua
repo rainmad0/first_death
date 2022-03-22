@@ -20,7 +20,7 @@ function PlayCutscene(cut, coords)
         Wait(0) 
     end
     CreateCutscene(coords)
-    Finish(coords)
+    Finish()
     RemoveCutscene()
     DoScreenFadeIn(500)
 end
@@ -30,7 +30,7 @@ function CreateCutscene(coords)
     DoScreenFadeIn(250)
 end
 
-function Finish(coords)
+function Finish()
     local tripped = false
     repeat
         Wait(0)
